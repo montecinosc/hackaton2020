@@ -6,6 +6,9 @@ const Navigation = () => {
     return (
         <nav className="navContainer">
           <ul className='navBar'>
+            <Link className="navItem" to="/">
+              <li>Inicio</li>
+            </Link>
             <Link className="navItem" to="/quienes-somos">
               <li>Quienes somos</li>
             </Link>
