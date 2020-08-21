@@ -1,0 +1,21 @@
+.topHeader {
+    background-color: #D3E7F8;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+}
+
+.button {
+    padding: 8px;
+    width: 198px;
+    height: 41px;
+    background-color: #774FB2;
+    border-radius: 5px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    border: none;
+}
