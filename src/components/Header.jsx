@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
-import './Header.css';
+import '../styles/Header.css'
 
 const Button = () => {
     return (
@@ -9,9 +9,9 @@ const Button = () => {
         </div>
     );
 }
- 
+
 const Header = () => {
-    return ( 
+    return (
         <div className="header">
             <div className="topHeader">
                 <i>AMUSAS</i>
@@ -21,5 +21,5 @@ const Header = () => {
         </div>
     );
 }
- 
+
 export default Header;
