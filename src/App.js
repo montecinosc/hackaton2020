@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
+import Carrusel from './Carrusel';
 
 function App() {
-  return ( <
-    div className = "App" >
-    hola hola < /div>
+  return ( 
+  <Fragment>
+    <Carrusel />
+  </Fragment>
   );
 }
 
