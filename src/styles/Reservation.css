@@ -1,0 +1,25 @@
+.colorbtn{
+    color: #CC8A90;
+    background-color:#FFFBFB ;
+    border: 1px solid #B24F59;
+}
+
+.colorbtn:hover{
+    background-color: #B24F59;
+}
+
+.btnreserva{
+    padding: 8px;
+    width: 132px;
+    height: 41px;
+    background-color: #774FB2;
+    border-radius: 5px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    border: none;
+    margin-right: 1em;
+}

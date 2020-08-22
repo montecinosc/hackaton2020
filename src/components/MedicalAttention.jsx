@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Link } from "react-router-dom";
 import Header from './Header'
 import Reservation from './Reservation'
 import Footer from './Footer';
@@ -38,7 +39,10 @@ const Specialties = (props) => {
             <div className="specialty" style={props.styles}>
                 <p className='contentDescription'>{props.specialtyDescription}</p>
                 <img src={props.img} alt='speacialty image' className='speacialtyImage'></img>
-                <button>Conoce las especialidades</button>
+            <Link to="/reserva">
+              <button>Conoce las especialidades</button>
+            </Link>
+                
             </div>
         </div>
     );
@@ -48,7 +52,6 @@ const MedicalAttention = () => {
     return (
         <Fragment>
             <Header />
-            <Reservation />
             <Description />
             <div className='speacialtiesOption'>
                 <Specialties title='Salud Física' specialtyDescription={physicalHealth} img={Image2} styles={backgroundPhysical} />

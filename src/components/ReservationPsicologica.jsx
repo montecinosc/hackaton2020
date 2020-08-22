@@ -17,9 +17,7 @@ const ReservationPsicologica = () => {
     React.useEffect(() => {
 
         const obtenerDatos = async () => {
-
             try {
-
                 const data = await db.collection('tareas').get()
                 const arrayData = data.docs.map(doc => ({ id: doc.id, ...doc.data() }))
                 let filtrarDatos = arrayData.filter(arrayData => arrayData.especialidad === "Psicologo");
@@ -31,7 +29,6 @@ const ReservationPsicologica = () => {
             }
         }
         obtenerDatos()
-
     }, [])
 
     const upDate = (item, email, nombre, telefono) => {
@@ -55,31 +52,27 @@ const ReservationPsicologica = () => {
         console.log("esto es la dataaaa", item)
         setFormulario(true);
         upDate(item, email, nombre, telefono)
-
     }
 
     return (
         <div className="container mt-3">
-
-
-
             <form >
-                <div class="form-group">
+                <div className="form-group">
                     <label for="exampleInputEmail1">Nombre del paciente</label>
                     <input type="text" className="form-control" id="nombrePaciente" aria-describedby="emailHelp" placeholder="Ingrese nombre" onChange={e => setNombre(e.target.value)} value={nombre} required />
 
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <label for="exampleInputPassword1">Numero de contacto</label>
                     <input type="text" className="form-control" id="numeroContacto" placeholder="Telefono" onChange={e => setTelefono(e.target.value)} value={telefono} required />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" className="form-control" id="emailPaciente" aria-describedby="emailHelp" placeholder="Enter email" onChange={e => setEmail(e.target.value)} value={email} required />
 
                 </div>
 
-                <table class="table table-bordered">
+                <table className="table table-bordered">
                     <thead>
                         <tr>
                             <th scope="col" className="col-sm-4">Especialista</th>
@@ -98,22 +91,17 @@ const ReservationPsicologica = () => {
                                         <th >{item.fecha}</th>
                                         <th >{item.hora}</th>
                                         <th>
-
                                             <button
-                                                className="btn btn-info btn-sm "
+                                                classNameName="btn btn-info btn-sm "
                                                 onClick={() => reservation(item)}> Reservar</button>
-
                                         </th>
-
                                     </tr>
                                 )
                             })
                         }
                     </tbody>
                 </table>
-
             </form>
-
         </div >
     )
 }
