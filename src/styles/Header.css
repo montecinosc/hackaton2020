@@ -17,7 +17,7 @@
     font-size: 33px;
     line-height: 40px;
     color: #4F3477;
-    margin-left: 50px;
+    margin-left: 8.5em;
 }
 
 .button {
@@ -33,5 +33,56 @@
     line-height: 25px;
     color: white;
     border: none;
-    margin-right: 50px;
+    margin-right: 1em;
+}
+
+.button:hover {
+    background-color: #8a6db6;
+}
+
+.getIn {
+    margin-block-start: 0.5em;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.rightHeader {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20em;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 18px;
+        margin-left: 1em;
+    }   
+    .button {
+        padding: 4px;
+        width: 97px;
+        height: 41px;
+        background-color: #774FB2;
+        border-radius: 5px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9px;
+        line-height: 25px;
+        color: white;
+        border: none;
+        margin-right: 1em;
+    }
+
+    .getIn {
+        display: flex;
+        flex-direction: row;
+        margin-right: 1em;
+        font-size: 9px;
+    }
+    .rightHeader {
+        margin-right: 1em;
+    }
+    
 }
