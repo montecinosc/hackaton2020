@@ -1,17 +1,15 @@
 import React from 'react'
 import { db } from '../firebase'
-import { Link } from "react-router-dom";
-import Form from './Form';
 import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
 import '../styles/Reservation.css'
 
 const Reservation = () => {
     const [tareas, setTareas] = React.useState([])
-    const [formulario, setFormulario] = React.useState(true);
+   // const [formulario, setFormulario] = React.useState(false);
     const [nombre, setNombre] = React.useState();
     const [email, setEmail] = React.useState();
     const [telefono, setTelefono] = React.useState();
+
 
 
     React.useEffect(() => {
@@ -50,23 +48,54 @@ const Reservation = () => {
         setEmail(document.getElementById("emailPaciente").value)
         setNombre(document.getElementById("nombrePaciente").value)
         setTelefono(document.getElementById("numeroContacto").value)
-
         console.log(email, nombre, telefono)
         console.log("esto es la dataaaa", item)
-        setFormulario(true);
+        //setFormulario(true);
         upDate(item, email, nombre, telefono)
 
     }
 
+
+const saludo = () => {
+    console.log("hola")
+}
+
+ 
     return (
         <div className="container mt-3">
 
+<div className="btn-group-lg font-italic">
+      <button type="button" className="active text-white btn btn-dark m-1"  onClick={() => saludo()}>
+        Medicina General
+      </button>
+      <button type="button" className="text-white btn btn-dark m-3"  onClick={() => saludo()} >
+        Nutrición
+      </button>
+      <button type="button" className="text-white btn btn-dark m-3"  onClick={() => saludo()} >
+        Dermatologia
+      </button>
+      <button type="button" className="text-white btn btn-dark m-3"  onClick={() => saludo()} >
+        Traumatología
+      </button>
+      <button type="button" className="text-white btn btn-dark m-3"  onClick={() => saludo()} >
+        Pediatría
+      </button>
+      <button type="button" className="text-white btn btn-dark m-3"  onClick={() => saludo()} >
+        Geriatría
+      </button>
+    </div>
+{/*     <div className="btn-group-lg font-italic">
+      {data.filter(item => item.type === type ).map((item, i) => (
+        <button onClick={() => addProducto(item)} value={item.price} name={item.name}
+          id={item.id}
+          type="button" className="btn color m-1" key={i}>{item.name} ${item.price}</button>
+      ))}
+    </div> */}
 
-            {formulario === true ? (
                 <form >
                     <div class="form-group">
                         <label for="exampleInputEmail1">Nombre del paciente</label>
-                        <input type="text" className="form-control" id="nombrePaciente" aria-describedby="emailHelp" placeholder="Ingrese nombre" onChange={e => setNombre(e.target.value)} value={nombre} />
+                        <input type="text" requiere className="form-control" id="nombrePaciente" aria-describedby="emailHelp" placeholder="Ingrese nombre" onChange={e => setNombre(e.target.value)} value={nombre} />
 
                     </div>
                     <div class="form-group">
@@ -78,10 +107,8 @@ const Reservation = () => {
                         <input type="email" className="form-control" id="emailPaciente" aria-describedby="emailHelp" placeholder="Enter email" onChange={e => setEmail(e.target.value)} value={email} />
 
                     </div>
-
-
-                </form>) : ""
-            }
+ 
+            
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -115,7 +142,7 @@ const Reservation = () => {
                 </tbody>
             </table>
 
-
+            </form>
         </div >
     )
 }

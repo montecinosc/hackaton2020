@@ -1,7 +1,5 @@
 import React from 'react';
-import Header from './Header';
 import imagenUno from '../img/imagen1.png'
-import cuerpo from '../img/pc.jpg'
 import '../styles/Carousel.css'
 
 const Carousel = () => {
