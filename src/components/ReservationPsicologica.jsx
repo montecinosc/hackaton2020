@@ -6,7 +6,7 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import '../styles/Reservation.css'
 
-const Reservation = () => {
+const ReservationPsicologica = () => {
     const [tareas, setTareas] = React.useState([])
     const [formulario, setFormulario] = React.useState(true);
     const [nombre, setNombre] = React.useState();
@@ -22,7 +22,7 @@ const Reservation = () => {
 
                 const data = await db.collection('tareas').get()
                 const arrayData = data.docs.map(doc => ({ id: doc.id, ...doc.data() }))
-                let filtrarDatos = arrayData.filter(arrayData => arrayData.especialidad === "Nutricionista");
+                let filtrarDatos = arrayData.filter(arrayData => arrayData.especialidad === "Psicologo");
                 console.log(arrayData)
                 setTareas(filtrarDatos)
 
@@ -30,7 +30,6 @@ const Reservation = () => {
                 console.log(error)
             }
         }
-
         obtenerDatos()
 
     }, [])
@@ -79,8 +78,6 @@ const Reservation = () => {
                     <input type="email" className="form-control" id="emailPaciente" aria-describedby="emailHelp" placeholder="Enter email" onChange={e => setEmail(e.target.value)} value={email} required />
 
                 </div>
-
-
 
                 <table class="table table-bordered">
                     <thead>
