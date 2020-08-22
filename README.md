@@ -1,6 +1,6 @@
 
 # Amusas 
-### Accion mujeres sanas
+### Acción mujeres sanas
 
 #### ¿Qué es Amusas? 
 Es un portal que busca  que las mujeres se empoderen y amen su cuerpo , entregándoles, entre otras cosas, herramientas para mejorar su salud física y mental. Con esto buscamos ayudar a solucionar un problema latente , que persiste desde temprana edad y a lo largo de nuestras vidas, que es una relación conflictiva con nuestros cuerpos, provocando graves consecuencias en distintos ámbitos de nuestra salud y sociedad.
