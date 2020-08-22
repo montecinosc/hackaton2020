@@ -11,7 +11,6 @@ const Footer = () => {
     return (
         <div className='footerContainer'>
             <div className='footerTitle'>
-                <p>AMUSAS</p>
             </div>
             <div className="footerOptions">
                 <div>

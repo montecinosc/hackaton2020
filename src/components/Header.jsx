@@ -1,7 +1,8 @@
 import React from 'react';
 import Navigation from './Navigation';
 import iconGetIn from '../img/get-in.png';
-import '../styles/Header.css'
+import logoGif from '../img/AMUSAS.gif';
+import '../styles/Header.css';
 
 const Button = () => {
     return (
@@ -23,7 +24,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className="topHeader">
-                <span className="logo">AMUSAS</span>
+                <div className='logo'></div>
                 <div className='rightHeader'>
                     <Button />
                     <GetIn />
