@@ -9,30 +9,29 @@ import Content from "./components/Content";
 import Activities from "./components/Activities";
 import Contact from "./components/Contact";
 
-
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path='/contacto'>
+        {/* <Route path='/contacto'>
           <Contact />
-        </Route>
-        <Route path='/actividades'>
+        </Route> */}
+        {/* <Route path='/actividades'>
           <Activities />
-        </Route>
+        </Route> */}
         <Route path='/contenido'>
           <Content />
         </Route>
-        <Route path='/grupos-de-ayuda'>
+        {/* <Route path='/grupos-de-ayuda'>
           <SupportGroup />
-        </Route>
+        </Route> */}
         <Route path='/atencion-medica'>
           <MedicalAttention />
         </Route>
-        <Route path='/quienes-somos'>
+        {/* <Route path='/quienes-somos'>
           <AboutUs />
-        </Route>
-        <Route path='/'>
+        </Route> */}
+        <Route path='/inicio'>
           <Home />
         </Route>
       </Switch>

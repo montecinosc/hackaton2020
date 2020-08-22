@@ -6,26 +6,26 @@ const Navigation = () => {
     return (
         <nav className="navContainer">
           <ul className='navBar'>
-            <Link className="navItem" to="/inicio">
-              <li>Inicio</li>
+            <Link to="/inicio">
+              <li className="navItem">Inicio</li>
             </Link>
-            <Link className="navItem" to="/quienes-somos">
-              <li>Quienes somos</li>
+            <Link to="/inicio">
+              <li className="navItem" >Quienes somos</li>
             </Link>
-            <Link className="navItem" to="/atencion-medica">
-              <li>Atención médica</li>
+            <Link  to="/atencion-medica">
+              <li className="navItem">Atención médica</li>
             </Link>
-            <Link className="navItem" to="/grupos-de-ayuda">
-              <li>Grupos de ayuda</li>
+            <Link  to="/inicio">
+              <li className="navItem">Grupos de ayuda</li>
             </Link>
-            <Link className="navItem" to="/contenido">
-              <li>Contenido</li>
+            <Link  to="/contenido">
+              <li className="navItem">Contenido</li>
             </Link>
-            <Link className="navItem" to="/actividades">
-              <li>Actividades</li>
+            <Link  to="/inicio">
+              <li className="navItem">Actividades</li>
             </Link>
-            <Link className="navItem" to="/contacto">
-              <li>Contacto</li>
+            <Link to="/contacto">
+              <li className="navItem">Contacto</li>
             </Link>
           </ul>
         </nav>

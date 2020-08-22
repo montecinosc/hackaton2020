@@ -1,0 +1,152 @@
+.descriptionMedicalAttention {
+    margin-left: 20em;
+    margin-right: 20em;   
+}
+.titleDescription {
+    font-family: Lato;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 50px;
+    color: #103E67;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgMedicalAttention { 
+        width: 645px;
+        height: 339px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+}
+
+.contentDescription, .contentDescriptionP  {
+    font-family: Lato;
+    font-weight: 300;
+    font-style: bold;
+    font-size: 25px;
+    color: #000000;
+}
+
+.contentDescriptionP  {
+    margin-left: 2em;
+    margin-top: 1em;
+}
+.contentDescription {
+    height: 90px;
+}
+
+.speacialtiesOption {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20em 5em 20em;
+}
+
+.specialtiesContainer {
+    width: 656px;
+    height: 564px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.specialty {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 637px;
+    height: 564px;
+    border-radius: 20px;
+    padding: 3em
+}
+
+.specialty button {
+    width: 296px;
+    height: 41px;
+    background-color: #217CCD;
+    border-radius: 5px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color:white;
+    padding: 8px;
+    border: none;
+    align-self: center;
+}
+.specialty button:hover {
+    background-color: #7BB6EA;
+}
+
+.specialtiesTitle {
+    font-family: Lato;
+    font-weight: 300;
+    font-style: light;
+    font-size: 50px;
+    color: #000000;
+    align-self: center;
+}
+
+.speacialtyImage {
+    width: 546px;
+    height: 276px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .descriptionMedicalAttention {
+        margin-left: 1em;
+        margin-right: 1em; 
+    }
+    .titleDescription, .specialtiesTitle {
+        font-size: 25px;
+    }
+
+    .descriptionContainer {
+        flex-direction: column;
+    }
+    .contentDescriptionP, .contentDescription {
+        font-size: 15px;
+        margin-left: 0;
+        margin-top: 0.5em;
+    }
+
+    .imgMedicalAttention { 
+        width: 382px;
+        height: 170px;
+    
+    }
+    .specialtiesContainer {
+        width: auto;
+        height: auto;
+    }
+    .speacialtiesOption {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 5em 0;
+            
+    }
+    .specialty {
+        width: auto;
+        height: auto;
+        padding: 1em;
+        border-radius: 0;
+    }
+    .specialtiesTitle {
+        padding: 0.5em;
+    }
+    .speacialtyImage {
+        width: 382px;
+        height: 170px;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+    .specialty button {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
