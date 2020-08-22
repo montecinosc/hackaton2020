@@ -8,6 +8,7 @@ import SupportGroup from "./components/SupportGroup";
 import Content from "./components/Content";
 import Events from "./components/SupportGroup";
 import Contact from "./components/Contact";
+import Form from './components/Form';
 
 
 const App = () => {
@@ -31,6 +32,9 @@ const App = () => {
         </Route>
         <Route path='/quienes-somos'>
           <AboutUs />
+        </Route>
+        <Route path='/reserva'>
+          <Form />
         </Route>
         <Route path='/'>
           <Home />
