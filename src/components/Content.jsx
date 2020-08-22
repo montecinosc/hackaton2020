@@ -9,16 +9,15 @@ import SeguirLuchando from '../img/seguir-luchando.png'
 import Infante from '../img/infante.png' 
 import Adolescente from '../img/adolescente.png' 
 import Protesta from '../img/protesta.png' 
-
+import ContentLogo from '../img/contenido.gif' 
 import '../styles/MedicalAttention.css';
-
 
 const Description = () => {
     return (
         <div className='descriptionMedicalAttention'>
             <p className='titleDescription'>Estamos aquí para cambiar el mundo</p>
             <div className='descriptionContainer'>
-                <img src={Image} alt='image' className='imgMedicalAttention' />
+                <img src={ContentLogo} alt='image' className='imgMedicalAttention' />
                 <div>
                     <p className='contentDescriptionP'>
                     Queremos construir esta revolución en conjunto. Cada uno de nosotros puede ser parte de este proceso de cambio, que necesitamos urgentemente

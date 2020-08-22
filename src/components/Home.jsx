@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
-import Carousel from '../components/Carousel';
+import VideoHeader from '../components/VideoHeader';
 import imgcard1 from '../img/queremos-ayudarte.png';
 import imgcard2 from '../img/cambiando-cosas.png';
 import imgcard3 from '../img/salud.png';
@@ -80,7 +80,9 @@ const Home = () => {
     return (
         <div className='home'>
             <Header />
-            <Carousel />
+            <div className='videoContainer'>
+                <VideoHeader />
+            </div>
             <InformationBlock />
             <div>
                 <CardHomeLeft 
