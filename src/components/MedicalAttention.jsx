@@ -1,5 +1,6 @@
-import React from 'react';
-import Header from './Header';
+import React, { Fragment } from 'react'
+import Header from './Header'
+import Reservation from './Reservation'
 import Footer from './Footer';
 import Image from '../img/viva-la-salud.png' 
 import Image2 from '../img/salud-fisica.png'
@@ -45,15 +46,16 @@ const Specialties = (props) => {
  
 const MedicalAttention = () => {
     return (
-        <div>
+        <Fragment>
             <Header />
+            <Reservation />
             <Description />
             <div className='speacialtiesOption'>
                 <Specialties title='Salud Física' specialtyDescription={physicalHealth} img={Image2} styles={backgroundPhysical} />
                 <Specialties title='Salud Mental' specialtyDescription={mentalHealth} img={Image3} styles={backgroundMental} />
             </div>
             <Footer />
-        </div>
+        </Fragment>
     );
 }
  

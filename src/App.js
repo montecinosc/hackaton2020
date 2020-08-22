@@ -8,6 +8,7 @@ import SupportGroup from "./components/SupportGroup";
 import Content from "./components/Content";
 import Activities from "./components/Activities";
 import Contact from "./components/Contact";
+import Form from './components/Form';
 
 const App = () => {
   return (
@@ -30,8 +31,11 @@ const App = () => {
         </Route>
         {/* <Route path='/quienes-somos'>
           <AboutUs />
-        </Route> */}
-        <Route path='/inicio'>
+      </Route>*/}
+        <Route path='/reserva'>
+          <Form />
+        </Route>
+        <Route path='/'>
           <Home />
         </Route>
       </Switch>
