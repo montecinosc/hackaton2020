@@ -11,12 +11,13 @@
 }
 
 .footerTitle {
-    padding-block-start: 1em;
-    padding-block-end: 0.5em;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.5px;
+    width: 250px;
+    height: 76px;
+    background-position: 50% 45%;
+    background-image: url(../img/AMUSASblack.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .footerOptionBold {

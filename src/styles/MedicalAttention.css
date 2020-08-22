@@ -137,6 +137,7 @@
         border-radius: 0;
     }
     .specialtiesTitle {
+        /* align-self: start; */
         padding: 0.5em;
     }
     .speacialtyImage {
@@ -146,6 +147,7 @@
         margin-bottom: 0.1em;
     }
     .specialty button {
+        align-self: start;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }

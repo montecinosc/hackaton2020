@@ -1,3 +1,13 @@
+.contentLogo {
+    width: 656px;
+    height: 339px;
+    /* background-position: 50% 50%; */
+    background-image: url(../img/contenido.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .informationBlock {
     width: 100%;
     background-color: #D3E7F8;

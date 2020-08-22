@@ -1,0 +1,8 @@
+.videoContainer {
+    height: 553px;
+    overflow: hidden;
+}
+
+.react-player {
+    overflow: hidden;
+}
