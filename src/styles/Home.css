@@ -1,0 +1,154 @@
+.informationBlock {
+    width: 100%;
+    background-color: #D3E7F8;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.informationBlock p {
+    font-family: Lato;
+    font-weight: 300;
+    font-style: light;
+    font-size: 50px;
+    line-height: 64px;
+    letter-spacing: 1px;
+    padding: 0.5em 14% 0.5em 14%;
+}
+
+.imgContainer img {
+    width: 650px;
+    height: 347px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: rgba(210, 196, 229, 0.2);
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-block-end: 7em;
+    margin-inline-end: 0em;
+    margin-inline-start: 1%;
+    margin-inline-end: 1%;
+}
+
+.cardTitle {
+    font-family: 'Alef', sans-serif;
+    font-size: 33px;
+    line-height: 40px;
+    color: #103E67;
+}
+
+.cardDescription {
+    font-family: Lato;
+    font-style: light;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 28px;
+    width: 650px;
+}
+
+.cardContainerLeft, .cardContainerRight {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    height: 372px;
+}
+
+.cardContainerLeft {
+    background-color: #E5C4C8;
+    padding-left: 20em;
+    padding-right: 20em;
+}
+
+.cardContainerRight {
+    background-color: #D2C4E5;
+    padding-left:35em;
+    padding-right: 35em;
+  
+}
+
+.cardContainerLeft button, .cardContainerRight button {
+    width: auto;
+    height: 41px;
+    background-color: #774FB2;
+    border-radius: 5px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color:white;
+    padding: 8px;
+    border: none;
+}
+.cardContainerLeft button:hover, .cardContainerRight button:hover {
+    background-color: #8a6db6;
+}
+
+
+@media screen and (max-width: 600px) {
+    .imgContainer img {
+        margin-top: 0em;
+        margin-bottom: 0em;
+        width: 333px;
+        height: 173px;
+    }
+    .infoContainer {
+        display: flex;
+        flex-direction: column;
+        margin-block-end: 1em;
+        margin-inline-end: 0em;
+        margin-inline-start: 1%;
+        margin-inline-end: 1%;
+    }
+
+    .cardContainerLeft, .cardContainerRight {
+        width: 100%;
+        display: flex;
+        margin-bottom: 1em;
+        height: auto;
+        padding: 1em 1em 1em 1em;
+    }
+    
+    .cardContainerLeft {
+        flex-direction: column;
+    }
+    
+    .cardContainerRight {
+        flex-direction: column-reverse;
+    }
+
+    .cardDescription {
+        font-size: 15px;
+        width: 335px;
+    }
+    .cardTitle {
+        font-size: 18px;
+    }
+    .informationBlock p {
+        font-family: Lato;
+        font-weight: 300;
+        font-style: light;
+        font-size: 25px;
+        line-height: 64px;
+        letter-spacing: 1px;
+        padding: 0em 5% 0em 5%;
+    }
+    .cardContainerLeft button, .cardContainerRight button {
+        width: auto;
+        height: 41px;
+        background-color: #774FB2;
+        border-radius: 5px;
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color:white;
+        padding: 8px;
+        border: none;
+    }
+}

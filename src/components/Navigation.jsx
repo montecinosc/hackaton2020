@@ -3,43 +3,17 @@ import { Link } from "react-router-dom";
 import '../styles/Navigation.css';
 
 const Navigation = () => {
-<<<<<<< HEAD
-  return (
-    <nav className="navContainer">
-      <ul className='navBar'>
-        <Link className="navItem" to="/quienes-somos">
-          <li>Quienes somos</li>
-        </Link>
-        <Link className="navItem" to="/atencion-medica">
-          <li>Atencion medica</li>
-        </Link>
-        <Link className="navItem" to="/grupos-de-ayuda">
-          <li>Grupos de ayuda</li>
-        </Link>
-        <Link className="navItem" to="/contenido">
-          <li>Contenido</li>
-        </Link>
-        <Link className="navItem" to="/eventos">
-          <li>Eventos</li>
-        </Link>
-        <Link className="navItem" to="/contacto">
-          <li>Contacto</li>
-        </Link>
-      </ul>
-    </nav>
-  );
-=======
     return (
         <nav className="navContainer">
           <ul className='navBar'>
-            <Link className="navItem" to="/">
+            <Link className="navItem" to="/inicio">
               <li>Inicio</li>
             </Link>
             <Link className="navItem" to="/quienes-somos">
               <li>Quienes somos</li>
             </Link>
             <Link className="navItem" to="/atencion-medica">
-              <li>Atencion medica</li>
+              <li>Atención médica</li>
             </Link>
             <Link className="navItem" to="/grupos-de-ayuda">
               <li>Grupos de ayuda</li>
@@ -47,8 +21,8 @@ const Navigation = () => {
             <Link className="navItem" to="/contenido">
               <li>Contenido</li>
             </Link>
-            <Link className="navItem" to="/eventos">
-              <li>Eventos</li>
+            <Link className="navItem" to="/actividades">
+              <li>Actividades</li>
             </Link>
             <Link className="navItem" to="/contacto">
               <li>Contacto</li>
@@ -56,7 +30,6 @@ const Navigation = () => {
           </ul>
         </nav>
     );
->>>>>>> 2a809078423770d7a85cf5ee734ac734dc9da431
 }
 
 export default Navigation;

@@ -6,7 +6,7 @@ import AboutUs from "./components/AboutUs";
 import MedicalAttention from "./components/MedicalAttention";
 import SupportGroup from "./components/SupportGroup";
 import Content from "./components/Content";
-import Events from "./components/SupportGroup";
+import Activities from "./components/Activities";
 import Contact from "./components/Contact";
 
 
@@ -17,8 +17,8 @@ const App = () => {
         <Route path='/contacto'>
           <Contact />
         </Route>
-        <Route path='/eventos'>
-          <Events />
+        <Route path='/actividades'>
+          <Activities />
         </Route>
         <Route path='/contenido'>
           <Content />
